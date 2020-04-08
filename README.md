@@ -1,24 +1,21 @@
-# PetShopApiRestAssured
-Exercise and Assert on the Pet Shop open API utilizing Rest Assured and TestNg Assertions
+# Pet Shop API Testing Using Rest Assured
 
-Prerequisites:
-Gradle install:  https://gradle.org/install/
+The purpose of this project and its expansions will be to demonstrate proficiency in testing RESTful and other types of API's utilizing Java frameworks and libraries.
 
 
-Usage: 
+## Current State
+This project utilizes TestNg as for the execution of test classes.  It interacts with the Pet Shop OpenAPI Swagger sample.   Google Code's **json-simple** library was picked for quickly building and encoding the sample POST body for adding a new animal to the database.   **JSONPath** is used for providing groovy-like simplicity for decoding the resulting response body. 
 
-gradle test 
-Runs from the src/test/java/sampleAutomation project helllo.java
+## Prerequisites
+This project was built using Open JDK 11.0.5 2019-10-15 as well as Gradle 6.3
+Installation instructions can be found here ([https://gradle.org/install/](https://gradle.org/install/))
+The homebrew installation will install openJDK as a package dependency.
 
-
-gradle build
-downloads and install all dependencies and runs the tests
-
-
-Test Results will write to a report file located at:  build/test-results/test/TEST-automationSample.hello.xml
+## Usage
 
 
-
-Includes some sample code assertions from the open API project Petshop API (https://petstore.swagger.io/), to show testing and assertion for Java REST API
-The purpose of this project and its expansions will be to demonstrate proficiency in testing RESTful and other types of API's
-utilzing Java frameworks and libraries. 
+|    command            |execution                         | 
+|----------------|-------------------------------|
+|gradle clean|`runs the predefined clean task`            |
+|gradle build|`runs the predefined build task`            |
+|gradle test |`runs the TestNg test cases in the src/test/java folder`|
